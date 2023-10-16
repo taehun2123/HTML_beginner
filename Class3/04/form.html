@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>폼 태그 연습</title>
+</head>
+<body>
+  <form 
+  name="form1" 
+  method="get" 
+  action="http://211.220.223.41/aspx/formTest.aspx"
+  autocomplete="off"
+  >
+    <fieldset>
+      <legend>입력 항목</legend>
+      <label for="id">학번</label>
+      <input 
+      type="text" 
+      name="id"
+      id="id"
+      placeholder="학번 입력"
+      />
+      <br/>
+      <label for="name">이름</label>
+      <input 
+      size="10"
+      type="text" 
+      name="name" 
+      id="name" 
+      placeholder="이름 입력"
+      />
+      <br/>
+      <input 
+      size="10"
+      type="search" 
+      name="name" 
+      id="name" 
+      placeholder="검색창"
+      />
+      <input 
+      type="hidden" 
+      name="score"
+      value="99" 
+      id=""/>
+      <br>
+      <input 
+      type="tel" 
+      name="tel" 
+      id=""
+      placeholder="전화번호 입력"
+      />
+      <br>
+      <input 
+      type="url" 
+      name="address" 
+      id=""
+      placeholder="링크 입력"
+      />
+      <br>
+      <input 
+      type="email" 
+      name="email" 
+      id=""
+      placeholder="이메일 입력"
+      />
+      <br>
+      <input 
+      type="date" 
+      name="birthday"
+      id=""
+      placeholder="날짜 입력"
+      />
+      <br>
+      <input 
+      type="number" 
+      name="grade"
+      id=""
+      min="1"
+      max="4"
+      value="2"
+      placeholder="학년"
+      />
+      <br>
+      <input 
+      type="color" 
+      name="fcolor"
+      id=""
+      placeholder="좋아하는 색"
+      />
+    </fieldset>
+    <br/>
+    <input type="submit"/>
+    <input type="button" value="저장"/>
+    <input type="reset"/>
+  </form>
+</body>
+</html>

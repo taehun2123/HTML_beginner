@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>form-3</h1>
+  <hr/>
+  <form>
+    과목 <input type="text" list="list1"> <br>
+    <datalist id="list1">
+      <option value="">국어</option>
+      <option value="">영어</option>
+      <option value="">수학</option>
+    </datalist>
+
+    하고싶은 말 <br/>
+    <textarea name="" id="" cols="80" rows="5"></textarea>
+    <br>
+
+    <progress max="100" value="50"></progress>
+    <progress max="50" value="10"></progress>
+
+    <meter min="0" max="100" value="64"></meter>
+    <meter value="0.8"></meter>
+    <meter min="1024" max="10240" low="2048" high="8192"></meter>
+
+    <input type="submit" name="" id=""> 
+    <input type="reset" name="" id=""> 
+    <input type="button" value="저장" name="" id="">
+    <br>
+    <button type="submit">저장</button>
+    <button type="reset">삭제</button>
+    <button type="submit">
+      <img src="/04/images/tick.png" alt="전송"> 전송
+    </button>
+    <input type="image" src="/04/images/login.jpg" value="전송">  <!-- 이미지만 표시됨 -->
+  </form>
+</body>
+</html>
