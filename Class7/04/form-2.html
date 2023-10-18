@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>폼(form) 태그 테스트</h1>
+  <hr/>
+  <form method="get" action="http://211.220.223.41/aspx/formTest.aspx"></form>
+  <table border="0">
+    <tr>
+      <td>학번</td>
+      <td><input type="text" value="2312008" autofocus size="10" placeholder="학번을 입력하세요" readonly></td>
+    </tr>
+    <tr>
+      <td>이름</td>
+      <td><input type="text" size="10" name="name" minlength="2" maxlength="20"></td>
+    </tr>
+    <tr>
+      <td>암호</td>
+      <td><input type="password" size="10"></td>
+    </tr>
+    <tr>
+      <td>생년월일</td>
+      <td><input type="date" size="10"></td>
+    </tr>
+    <tr>
+      <td>성별</td>
+      <td>
+        <input type="radio" checked value="man" name="sex">남
+        <input type="radio" value="woman" name="sex">여        
+      </td>
+    </tr>
+    <tr>
+      <td>학년</td>
+      <td>
+        <input type="radio" checked value="1" name="grade">1학년
+        <input type="radio" value="2" name="grade">2학년
+        <input type="radio" value="3" name="grade">3학년
+        <input type="radio" value="4" name="grade">4학년            
+      </td>
+    </tr>
+    <tr>
+      <td>과목</td>
+      <td>
+        <input type="checkbox" checked value="1" name="subject">국어
+        <input type="checkbox" value="2" name="subject">영어
+        <input type="checkbox" value="3" name="subject">수학
+        <input type="checkbox" value="4" name="subject">한문            
+      </td>
+    </tr>
+    <tr>
+      <td>파일 첨부</td>
+      <td>
+        <input type="file">    
+        <input type="file">  
+      </td>
+    </tr>
+    <tr>
+      <td>학과</td>
+      <td>
+        <select size="5" multiple>    
+          <optgroup labal="동캠">
+            <option>컴퓨터IT학부</option>
+            <option>간호학부</option>
+            <option>유아교육학과</option>
+          </optgroup>
+          <optgroup label="서캠">
+            <option>기계공학부</option>
+          </optgroup>
+        </select>  
+      </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+        <input value="제출" type="submit">
+        <input value="초기화" type="reset">
+        <input type="button" value="삭제"/>
+        <input type="image" src="/docs/prod.jpg" name="" id="">
+      </td>
+    </tr>  
+  </table>
+</body>
+</html>
