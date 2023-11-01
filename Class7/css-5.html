@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
+    body{
+      text-indent: 30px;
+    }
     #div1{
       font-family: "궁서체", "맑은 고딕";
     }
@@ -14,19 +17,51 @@
     .uline{
       text-decoration: underline;
     }
+    #h11 {
+      text-shadow: 2px 2px 5px red;
+    }
+    #h12 {
+      text-shadow: 2px 2px 1px red;
+    }
+    #h13 {
+      text-shadow: -5px -5px 1px red;
+    }
+    #h14 {
+      text-shadow: 0 0 4px #ccc, 0 -5px 4px #ff3, 2px -10px 6px #fd3, -2px -15px 11px #f80, 2px -19px 18px #f20;  /* 텍스트 그림자 */
+    }
+    .p{
+      white-space: pre-wrap;
+    }
+    #div1{
+      white-space: pre-wrap;
+    }
+    #div2{
+      letter-spacing: 1px;
+      word-spacing: 0.5em;
+      text-align: justify;
+    }
   </style>
 </head>
 <body>
-  <h1 class="red">HTML5</h1>
+  <h1 id="h11">HTML5</h1>
+  <h1 id="h12">HTML5</h1>
+  <h1 id="h13">HTML5</h1>
+  <h1 id="h14">HTML5</h1>
+
 HyperText Markup Language version 5.
 <div id="div1">
 <p>2014년 국제 웹 표준화 단체인 W3C(World Wide Web Consortium)에서 개발한 하이퍼텍스트 마크업 언어(HyperText Markup Language)의 <span class="uline">최신 버전</span>입니다.
 </div>
 <br/>
+<div id="div2">
 기존의 <span class="red">액티브엑스(ActiveX)</span>나 플래시(Flash) 같은 플러그인(plug-in) 소프트웨어와 유사한 기능을 웹 응용 프로그램으로 개발할 수 있도록 지원합니다. 또한 HTML5는 표준 기술로 이식성이 뛰어나 플랫폼(예: 리눅스, 윈도우, iOS, 안드로이드 등) 대부분에서 실행됩니다. 즉, HTML5로 웹 응용 프로그램을 만들면 거의 모든 디바이스나 플랫폼에서 사용할 수 있습니다.</p>
+</div>
 <h1>
   CSS
 </h1>
+
+<p style="text-align: center;">안녕하세요</p>
+<p style="text-align: end;">2023-10-18</p>
 <a href="/">홈으로</a>
 <a href="/index.html">홈으로</a>
 <a href="../index.html">홈으로</a>
